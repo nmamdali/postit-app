@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 dotenv.config();
 
-//const URI =`mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@itcluster.quf0h.mongodb.net/${process.env.MONGO_DATABASE}?retryWrites=true&w=majority&appName=itcluster`;
+
 const URI = `mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@postitcluster.qld0q.mongodb.net/${process.env.MONGO_DATABASE}?retryWrites=true&w=majority&appName=PostITCluster`
 mongoose.connect(URI);
 app.listen(process.env.PORT, () => {
